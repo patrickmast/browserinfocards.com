@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel
+.pm7-code/history.json
+.pm7-code/shelfs.json

@@ -3,6 +3,34 @@
   "maxEntries": 100,
   "entries": [
     {
+      "id": "EE7CF649-F106-4EC7-BE9B-E63B9BA3BB59",
+      "command": "https://browserinfocards.com",
+      "status": "done",
+      "executedAt": "2026-03-26T14:11:32.405Z",
+      "directory": "/Users/patrickmast/Dev/web-browserinfocards.com"
+    },
+    {
+      "id": "FD13B1B1-3400-4551-98B0-9B8A8CFD452C",
+      "command": "Ik zie https://browserinfocards.com! nog niet..",
+      "status": "done",
+      "executedAt": "2026-03-26T14:11:23.820Z",
+      "directory": "/Users/patrickmast/Dev/web-browserinfocards.com"
+    },
+    {
+      "id": "FF7A00D2-A091-424E-85A9-B2694798B63C",
+      "command": "Ok, dan mag je dat daar opkuisen",
+      "status": "done",
+      "executedAt": "2026-03-26T14:04:15.482Z",
+      "directory": "/Users/patrickmast/Dev/web-browserinfocards.com"
+    },
+    {
+      "id": "AF816735-0659-45FB-94FD-2432CC60E640",
+      "command": "CLOUDFLARE_DNS_EDIT token uitgebreid",
+      "status": "done",
+      "executedAt": "2026-03-26T13:52:39.014Z",
+      "directory": "/Users/patrickmast/Dev/web-browserinfocards.com"
+    },
+    {
       "id": "99D2FAFE-59FC-4C8F-AA83-435069C98D49",
       "command": "Ja",
       "status": "done",
