@@ -1,0 +1,35 @@
+#!/bin/bash
+set -e
+
+# Colors
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+REMOTE_USER="root"
+REMOTE_HOST="46.62.171.191"
+REMOTE_PATH="/var/www/browserinfocards.com"
+
+echo -e "${BLUE}=== BrowserInfoCards Deploy ===${NC}"
+
+# Increment build number and add deploy timestamp
+BUILD=$(cat version.json | grep -o '"build": [0-9]*' | grep -o '[0-9]*')
+NEW_BUILD=$((BUILD + 1))
+DEPLOY_DATE=$(date +"%d/%m/%Y %Hu%M")
+echo "{\"build\": $NEW_BUILD, \"deployedAt\": \"$DEPLOY_DATE\"}" > version.json
+echo -e "${GREEN}Build version: $NEW_BUILD (deployed: $DEPLOY_DATE)${NC}"
+
+# Build
+echo -e "${BLUE}Building...${NC}"
+bun run build
+
+# Deploy
+echo -e "${BLUE}Deploying to Server1...${NC}"
+rsync -avz --delete dist/ ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_PATH}/
+
+# Fix permissions
+echo -e "${BLUE}Fixing permissions...${NC}"
+ssh ${REMOTE_USER}@${REMOTE_HOST} "chmod -R 755 ${REMOTE_PATH} && find ${REMOTE_PATH} -type f -exec chmod 644 {} \;"
+
+echo -e "${GREEN}Deployed: v$NEW_BUILD${NC}"
+echo -e "${GREEN}Live at: https://www.browserinfocards.com${NC}"

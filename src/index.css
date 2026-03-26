@@ -1,0 +1,445 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ===== PM7 STANDARD THEMES ===== */
+
+  /* Light Theme (default fallback) */
+  :root {
+    --pm7-background: 217 25% 99%;
+    --pm7-foreground: 217 20% 15%;
+    --pm7-surface: 217 30% 99%;
+    --pm7-surface-hover: 217 25% 95%;
+    --pm7-surface-active: 217 20% 90%;
+    --pm7-primary: 217 91% 60%;
+    --pm7-primary-hover: 217 91% 54%;
+    --pm7-primary-active: 217 91% 48%;
+    --pm7-primary-foreground: 0 0% 100%;
+    --pm7-text-primary: 217 20% 15%;
+    --pm7-text-secondary: 217 15% 35%;
+    --pm7-text-disabled: 217 10% 55%;
+    --pm7-border: 217 15% 88%;
+    --pm7-border-hover: 217 18% 78%;
+    --pm7-muted: 217 20% 95%;
+    --pm7-muted-foreground: 217 12% 45%;
+    --pm7-input: 217 18% 94%;
+
+    --background: var(--pm7-background);
+    --foreground: var(--pm7-foreground);
+    --card: var(--pm7-surface);
+    --card-foreground: var(--pm7-foreground);
+    --popover: var(--pm7-surface);
+    --popover-foreground: var(--pm7-foreground);
+    --primary: var(--pm7-primary);
+    --primary-foreground: var(--pm7-primary-foreground);
+    --primary-hover: var(--pm7-primary-hover);
+    --primary-active: var(--pm7-primary-active);
+    --secondary: 217 20% 92%;
+    --secondary-foreground: var(--pm7-foreground);
+    --muted: var(--pm7-muted);
+    --muted-foreground: var(--pm7-muted-foreground);
+    --accent: 217 95% 90%;
+    --accent-foreground: 217 30% 28%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--pm7-border);
+    --border-hover: var(--pm7-border-hover);
+    --input: var(--pm7-input);
+    --ring: var(--pm7-primary);
+    --radius: 0.5rem;
+  }
+
+  /* Rose Theme - PM7 Default */
+  .rose {
+    --pm7-background: 350 100% 99%;
+    --pm7-foreground: 340 30% 20%;
+    --pm7-surface: 340 65% 99%;
+    --pm7-surface-hover: 340 60% 95%;
+    --pm7-surface-active: 340 50% 90%;
+    --pm7-primary: 340 82% 52%;
+    --pm7-primary-hover: 340 82% 46%;
+    --pm7-primary-active: 340 82% 40%;
+    --pm7-primary-foreground: 0 0% 100%;
+    --pm7-text-primary: 340 40% 20%;
+    --pm7-text-secondary: 340 30% 38%;
+    --pm7-text-disabled: 340 30% 55%;
+    --pm7-border: 340 50% 85%;
+    --pm7-border-hover: 340 55% 75%;
+    --pm7-muted: 340 55% 94%;
+    --pm7-muted-foreground: 340 35% 45%;
+    --pm7-input: 340 50% 93%;
+
+    --background: var(--pm7-background);
+    --foreground: var(--pm7-foreground);
+    --card: var(--pm7-surface);
+    --card-foreground: var(--pm7-foreground);
+    --popover: var(--pm7-surface);
+    --popover-foreground: var(--pm7-foreground);
+    --primary: var(--pm7-primary);
+    --primary-foreground: var(--pm7-primary-foreground);
+    --primary-hover: var(--pm7-primary-hover);
+    --primary-active: var(--pm7-primary-active);
+    --secondary: 340 55% 90%;
+    --secondary-foreground: var(--pm7-foreground);
+    --muted: var(--pm7-muted);
+    --muted-foreground: var(--pm7-muted-foreground);
+    --accent: 340 90% 88%;
+    --accent-foreground: 340 35% 30%;
+    --destructive: 0 85% 62%;
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--pm7-border);
+    --border-hover: var(--pm7-border-hover);
+    --input: var(--pm7-input);
+    --ring: var(--pm7-primary);
+  }
+
+  /* Light Theme */
+  .light {
+    --pm7-background: 217 25% 99%;
+    --pm7-foreground: 217 20% 15%;
+    --pm7-surface: 217 30% 99%;
+    --pm7-surface-hover: 217 25% 95%;
+    --pm7-surface-active: 217 20% 90%;
+    --pm7-primary: 217 91% 60%;
+    --pm7-primary-hover: 217 91% 54%;
+    --pm7-primary-active: 217 91% 48%;
+    --pm7-primary-foreground: 0 0% 100%;
+    --pm7-text-primary: 217 20% 15%;
+    --pm7-text-secondary: 217 15% 35%;
+    --pm7-text-disabled: 217 10% 55%;
+    --pm7-border: 217 15% 88%;
+    --pm7-border-hover: 217 18% 78%;
+    --pm7-muted: 217 20% 95%;
+    --pm7-muted-foreground: 217 12% 45%;
+    --pm7-input: 217 18% 94%;
+
+    --background: var(--pm7-background);
+    --foreground: var(--pm7-foreground);
+    --card: var(--pm7-surface);
+    --card-foreground: var(--pm7-foreground);
+    --popover: var(--pm7-surface);
+    --popover-foreground: var(--pm7-foreground);
+    --primary: var(--pm7-primary);
+    --primary-foreground: var(--pm7-primary-foreground);
+    --primary-hover: var(--pm7-primary-hover);
+    --primary-active: var(--pm7-primary-active);
+    --secondary: 217 20% 92%;
+    --secondary-foreground: var(--pm7-foreground);
+    --muted: var(--pm7-muted);
+    --muted-foreground: var(--pm7-muted-foreground);
+    --accent: 217 95% 90%;
+    --accent-foreground: 217 30% 28%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--pm7-border);
+    --border-hover: var(--pm7-border-hover);
+    --input: var(--pm7-input);
+    --ring: var(--pm7-primary);
+  }
+
+  /* Dark Theme */
+  .dark {
+    --pm7-background: 0 0% 7%;
+    --pm7-foreground: 0 0% 88%;
+    --pm7-surface: 0 0% 12%;
+    --pm7-surface-hover: 0 0% 16%;
+    --pm7-surface-active: 0 0% 20%;
+    --pm7-primary: 210 100% 62%;
+    --pm7-primary-hover: 209 77% 53%;
+    --pm7-primary-active: 211 72% 46%;
+    --pm7-primary-foreground: 0 0% 100%;
+    --pm7-text-primary: 0 0% 88%;
+    --pm7-text-secondary: 0 0% 60%;
+    --pm7-text-disabled: 0 0% 40%;
+    --pm7-border: 0 0% 27%;
+    --pm7-border-hover: 0 0% 40%;
+    --pm7-muted: 0 0% 18%;
+    --pm7-muted-foreground: 0 0% 90%;
+    --pm7-input: 0 0% 12%;
+
+    --background: var(--pm7-background);
+    --foreground: var(--pm7-foreground);
+    --card: var(--pm7-surface);
+    --card-foreground: var(--pm7-foreground);
+    --popover: var(--pm7-surface);
+    --popover-foreground: var(--pm7-foreground);
+    --primary: var(--pm7-primary);
+    --primary-foreground: var(--pm7-primary-foreground);
+    --primary-hover: var(--pm7-primary-hover);
+    --primary-active: var(--pm7-primary-active);
+    --secondary: var(--pm7-surface-hover);
+    --secondary-foreground: var(--pm7-foreground);
+    --muted: var(--pm7-muted);
+    --muted-foreground: var(--pm7-muted-foreground);
+    --accent: var(--pm7-surface-active);
+    --accent-foreground: var(--pm7-foreground);
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--pm7-border);
+    --border-hover: var(--pm7-border-hover);
+    --input: var(--pm7-input);
+    --ring: var(--pm7-primary);
+  }
+
+  /* Dim Theme */
+  .dim {
+    --pm7-background: 220 16% 20%;
+    --pm7-foreground: 0 0% 92%;
+    --pm7-surface: 220 16% 24%;
+    --pm7-surface-hover: 220 16% 28%;
+    --pm7-surface-active: 220 16% 32%;
+    --pm7-primary: 217 85% 66%;
+    --pm7-primary-hover: 217 85% 60%;
+    --pm7-primary-active: 217 85% 54%;
+    --pm7-primary-foreground: 0 0% 100%;
+    --pm7-text-primary: 0 0% 92%;
+    --pm7-text-secondary: 0 0% 72%;
+    --pm7-text-disabled: 0 0% 52%;
+    --pm7-border: 220 14% 32%;
+    --pm7-border-hover: 220 14% 40%;
+    --pm7-muted: 220 15% 26%;
+    --pm7-muted-foreground: 0 0% 80%;
+    --pm7-input: 220 16% 26%;
+
+    --background: var(--pm7-background);
+    --foreground: var(--pm7-foreground);
+    --card: var(--pm7-surface);
+    --card-foreground: var(--pm7-foreground);
+    --popover: var(--pm7-surface);
+    --popover-foreground: var(--pm7-foreground);
+    --primary: var(--pm7-primary);
+    --primary-foreground: var(--pm7-primary-foreground);
+    --primary-hover: var(--pm7-primary-hover);
+    --primary-active: var(--pm7-primary-active);
+    --secondary: var(--pm7-surface-hover);
+    --secondary-foreground: var(--pm7-foreground);
+    --muted: var(--pm7-muted);
+    --muted-foreground: var(--pm7-muted-foreground);
+    --accent: var(--pm7-surface-active);
+    --accent-foreground: var(--pm7-foreground);
+    --destructive: 0 80% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--pm7-border);
+    --border-hover: var(--pm7-border-hover);
+    --input: var(--pm7-input);
+    --ring: var(--pm7-primary);
+  }
+
+  /* Purple Theme */
+  .purple {
+    --pm7-background: 270 20% 8%;
+    --pm7-foreground: 270 5% 90%;
+    --pm7-surface: 270 18% 12%;
+    --pm7-surface-hover: 270 18% 16%;
+    --pm7-surface-active: 270 18% 20%;
+    --pm7-primary: 280 85% 65%;
+    --pm7-primary-hover: 280 85% 58%;
+    --pm7-primary-active: 280 85% 52%;
+    --pm7-primary-foreground: 0 0% 100%;
+    --pm7-text-primary: 270 5% 90%;
+    --pm7-text-secondary: 270 5% 65%;
+    --pm7-text-disabled: 270 5% 45%;
+    --pm7-border: 270 15% 25%;
+    --pm7-border-hover: 270 15% 35%;
+    --pm7-muted: 270 15% 18%;
+    --pm7-muted-foreground: 270 5% 85%;
+    --pm7-input: 270 18% 14%;
+
+    --background: var(--pm7-background);
+    --foreground: var(--pm7-foreground);
+    --card: var(--pm7-surface);
+    --card-foreground: var(--pm7-foreground);
+    --popover: var(--pm7-surface);
+    --popover-foreground: var(--pm7-foreground);
+    --primary: var(--pm7-primary);
+    --primary-foreground: var(--pm7-primary-foreground);
+    --primary-hover: var(--pm7-primary-hover);
+    --primary-active: var(--pm7-primary-active);
+    --secondary: var(--pm7-surface-hover);
+    --secondary-foreground: var(--pm7-foreground);
+    --muted: var(--pm7-muted);
+    --muted-foreground: var(--pm7-muted-foreground);
+    --accent: var(--pm7-surface-active);
+    --accent-foreground: var(--pm7-foreground);
+    --destructive: 350 80% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--pm7-border);
+    --border-hover: var(--pm7-border-hover);
+    --input: var(--pm7-input);
+    --ring: var(--pm7-primary);
+  }
+
+  /* Contrast Theme (Accessibility) */
+  .contrast {
+    --pm7-background: 0 0% 0%;
+    --pm7-foreground: 0 0% 100%;
+    --pm7-surface: 0 0% 5%;
+    --pm7-surface-hover: 0 0% 10%;
+    --pm7-surface-active: 0 0% 15%;
+    --pm7-primary: 0 0% 100%;
+    --pm7-primary-hover: 0 0% 85%;
+    --pm7-primary-active: 0 0% 70%;
+    --pm7-primary-foreground: 0 0% 0%;
+    --pm7-text-primary: 0 0% 100%;
+    --pm7-text-secondary: 0 0% 80%;
+    --pm7-text-disabled: 0 0% 55%;
+    --pm7-border: 0 0% 40%;
+    --pm7-border-hover: 0 0% 60%;
+    --pm7-muted: 0 0% 12%;
+    --pm7-muted-foreground: 0 0% 85%;
+    --pm7-input: 0 0% 8%;
+
+    --background: var(--pm7-background);
+    --foreground: var(--pm7-foreground);
+    --card: var(--pm7-surface);
+    --card-foreground: var(--pm7-foreground);
+    --popover: var(--pm7-surface);
+    --popover-foreground: var(--pm7-foreground);
+    --primary: var(--pm7-primary);
+    --primary-foreground: var(--pm7-primary-foreground);
+    --primary-hover: var(--pm7-primary-hover);
+    --primary-active: var(--pm7-primary-active);
+    --secondary: 0 0% 15%;
+    --secondary-foreground: var(--pm7-foreground);
+    --muted: var(--pm7-muted);
+    --muted-foreground: var(--pm7-muted-foreground);
+    --accent: 0 0% 20%;
+    --accent-foreground: var(--pm7-foreground);
+    --destructive: 0 0% 100%;
+    --destructive-foreground: 0 0% 0%;
+    --border: var(--pm7-border);
+    --border-hover: var(--pm7-border-hover);
+    --input: var(--pm7-input);
+    --ring: 0 0% 100%;
+  }
+
+  /* Terminal Theme */
+  .terminal {
+    --pm7-background: 120 20% 3%;
+    --pm7-foreground: 120 100% 75%;
+    --pm7-surface: 120 25% 7%;
+    --pm7-surface-hover: 120 25% 10%;
+    --pm7-surface-active: 120 25% 14%;
+    --pm7-primary: 120 100% 55%;
+    --pm7-primary-hover: 120 100% 65%;
+    --pm7-primary-active: 120 100% 45%;
+    --pm7-primary-foreground: 0 0% 0%;
+    --pm7-text-primary: 120 100% 75%;
+    --pm7-text-secondary: 120 60% 60%;
+    --pm7-text-disabled: 120 30% 45%;
+    --pm7-border: 120 25% 18%;
+    --pm7-border-hover: 120 30% 28%;
+    --pm7-muted: 120 25% 12%;
+    --pm7-muted-foreground: 120 30% 58%;
+    --pm7-input: 120 25% 9%;
+
+    --background: var(--pm7-background);
+    --foreground: var(--pm7-foreground);
+    --card: var(--pm7-surface);
+    --card-foreground: var(--pm7-foreground);
+    --popover: var(--pm7-surface);
+    --popover-foreground: var(--pm7-foreground);
+    --primary: var(--pm7-primary);
+    --primary-foreground: var(--pm7-primary-foreground);
+    --primary-hover: var(--pm7-primary-hover);
+    --primary-active: var(--pm7-primary-active);
+    --secondary: var(--pm7-surface-hover);
+    --secondary-foreground: var(--pm7-foreground);
+    --muted: var(--pm7-muted);
+    --muted-foreground: var(--pm7-muted-foreground);
+    --accent: 120 100% 20%;
+    --accent-foreground: var(--pm7-foreground);
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 0 0% 0%;
+    --border: var(--pm7-border);
+    --border-hover: var(--pm7-border-hover);
+    --input: var(--pm7-input);
+    --ring: var(--pm7-primary);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background font-sans antialiased;
+  }
+
+  /* Color scheme for dark themes */
+  .dark, .dim, .purple, .contrast, .terminal {
+    color-scheme: dark;
+  }
+
+  .light, .rose {
+    color-scheme: light;
+  }
+
+  /* Background patterns per theme */
+  .bg-background {
+    background-color: hsl(var(--background));
+    background-image:
+      radial-gradient(circle at center,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 35%,
+        rgba(0, 0, 0, 0.03) 100%
+      ),
+      radial-gradient(hsl(var(--foreground) / 0.04) 1px, transparent 1px);
+    background-size: 100% 100%, 24px 24px;
+    background-position: center center, 0 0;
+  }
+
+  .dark .bg-background,
+  .dim .bg-background,
+  .purple .bg-background,
+  .contrast .bg-background,
+  .terminal .bg-background {
+    background-color: hsl(var(--background));
+    background-image: radial-gradient(hsl(var(--foreground) / 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: 0 0;
+  }
+}
+
+/* Loader animation */
+.loader {
+  width: 20px;
+  height: 12px;
+  display: block;
+  margin: auto;
+  position: relative;
+  border-radius: 4px;
+  color: hsl(var(--foreground));
+  background: currentColor;
+  box-sizing: border-box;
+  animation: animloader 0.6s 0.3s ease infinite alternate;
+}
+
+.loader::after,
+.loader::before {
+  content: '';
+  box-sizing: border-box;
+  width: 20px;
+  height: 12px;
+  background: currentColor;
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  right: 110%;
+  animation: animloader 0.6s ease infinite alternate;
+}
+
+.loader::after {
+  left: 110%;
+  right: auto;
+  animation-delay: 0.6s;
+}
+
+@keyframes animloader {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 48px;
+  }
+}

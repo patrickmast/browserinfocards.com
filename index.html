@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrowserInfoCards</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      body { margin: 0; background: #fff; }
+      @media (prefers-color-scheme: dark) { body { background: #0a0a0a; } }
+      .initial-loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .initial-spinner {
+        width: 20px;
+        height: 12px;
+        display: block;
+        position: relative;
+        border-radius: 4px;
+        background: #333;
+        animation: spin 0.6s 0.3s ease infinite alternate;
+      }
+      @media (prefers-color-scheme: dark) { .initial-spinner { background: #F5F4F3; } }
+      .initial-spinner::after,
+      .initial-spinner::before {
+        content: '';
+        width: 20px;
+        height: 12px;
+        background: inherit;
+        position: absolute;
+        border-radius: 4px;
+        top: 0;
+        right: 110%;
+        animation: spin 0.6s ease infinite alternate;
+      }
+      .initial-spinner::after {
+        left: 110%;
+        right: auto;
+        animation-delay: 0.6s;
+      }
+      @keyframes spin {
+        0% { width: 20px; }
+        100% { width: 48px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="initial-loader">
+        <span class="initial-spinner"></span>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

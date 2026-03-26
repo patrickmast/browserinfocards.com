@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "maxEntries": 100,
+  "entries": [
+    {
+      "id": "99D2FAFE-59FC-4C8F-AA83-435069C98D49",
+      "command": "Ja",
+      "status": "done",
+      "executedAt": "2026-03-26T13:44:22.578Z",
+      "directory": "/Users/patrickmast/Dev/web-browserinfocards.com"
+    },
+    {
+      "id": "9FF6A9EE-38E9-4FE7-A62C-A4A413D9EC00",
+      "command": "Kunnen we deze site op Vercel deployen?",
+      "status": "done",
+      "executedAt": "2026-03-26T13:40:23.487Z",
+      "directory": "/Users/patrickmast/Dev/web-browserinfocards.com"
+    },
+    {
+      "id": "92388DB5-C2DC-4F33-8633-F283E5C89BC6",
+      "command": "Deze site werkt precies niet",
+      "status": "done",
+      "executedAt": "2026-03-26T13:39:26.823Z",
+      "directory": "/Users/patrickmast/Dev/web-browserinfocards.com"
+    }
+  ]
+}
